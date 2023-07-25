@@ -1,0 +1,188 @@
+{
+  "id" : 1,
+  "name" : "Name",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-07-25T05:25:37Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgbWVyY2hhbnQgPSBwZXJzb24gIkZpcnN0IE1lcmNoYW50IgogICAgICAgIG1lcmNoYW50MiA9IHBlcnNvbiAiU2Vjb25kIE1lcmNoYW50IgogICAgICAgIHNvZnR3YXJlU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIkdXMyIgewogICAgICAgICAgICB3ZWJhcHAgPSBjb250YWluZXIgIlRlc3RpbmciIHsKICAgICAgICAgICAgICAgIG1lcmNoYW50IC0+IHRoaXMgIlVzZXMiCiAgICAgICAgICAgICAgICBtZXJjaGFudDIgLT4gdGhpcyAiQWxzbyB1c2VzIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbnRhaW5lciAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHdlYmFwcCAtPiB0aGlzICJSZWFkcyBmcm9tIGFuZCB3cml0ZXMgdG8iCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgc29mdHdhcmVTeXN0ZW0gewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIHNvZnR3YXJlU3lzdGVtIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIHRoZW1lIGRlZmF1bHQKICAgIH0KCn0K"
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "merchant"
+      },
+      "name" : "First Merchant",
+      "relationships" : [ {
+        "id" : "6",
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "Uses",
+        "linkedRelationshipId" : "5"
+      }, {
+        "id" : "5",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ace972de-03fb-4370-897b-4521486eca66"
+        },
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Uses"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "merchant2"
+      },
+      "name" : "Second Merchant",
+      "relationships" : [ {
+        "id" : "8",
+        "sourceId" : "2",
+        "destinationId" : "3",
+        "description" : "Also uses",
+        "linkedRelationshipId" : "7"
+      }, {
+        "id" : "7",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "26b325fc-01c7-4c30-bde6-5a07229b1e7c"
+        },
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "Also uses"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "3",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "softwaresystem"
+      },
+      "name" : "GW3",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "9",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "5933141f-c063-4e27-89db-52b9eb8a93b4"
+        },
+        "name" : "Database",
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webapp"
+        },
+        "name" : "Testing",
+        "relationships" : [ {
+          "id" : "10",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "00541843-060d-4ae5-9bf8-27e229929602"
+          },
+          "sourceId" : "4",
+          "destinationId" : "9",
+          "description" : "Reads from and writes to"
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 1550,
+        "height" : 1500
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 199,
+        "y" : 900
+      }, {
+        "id" : "3",
+        "x" : 899,
+        "y" : 600
+      } ],
+      "relationships" : [ {
+        "id" : "6"
+      }, {
+        "id" : "8"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "Container-001",
+      "order" : 2,
+      "softwareSystemId" : "3",
+      "dimensions" : {
+        "width" : 2320,
+        "height" : 1500
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 199,
+        "y" : 900
+      }, {
+        "id" : "4",
+        "x" : 899,
+        "y" : 600
+      }, {
+        "id" : "9",
+        "x" : 1649,
+        "y" : 600
+      } ],
+      "relationships" : [ {
+        "id" : "5"
+      }, {
+        "id" : "7"
+      }, {
+        "id" : "10"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "Container-001"
+    }
+  }
+}
